@@ -1,0 +1,108 @@
+.actrya-topbar {
+  display: flex;
+  height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  border-bottom: 1px solid var(--actrya-border);
+  background: rgba(5, 3, 13, 0.68);
+  backdrop-filter: blur(18px);
+}
+
+.actrya-topbar__eyebrow {
+  margin: 0 0 4px;
+  color: var(--actrya-muted);
+  font-size: 13px;
+}
+
+.actrya-topbar__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+}
+
+.actrya-topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actrya-topbar__search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(360px, 32vw);
+  padding: 12px 14px;
+  border: 1px solid var(--actrya-border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  color: var(--actrya-muted-dark);
+  transition: 0.2s ease;
+}
+
+.actrya-topbar__search:focus-within {
+  border-color: rgba(139, 92, 246, 0.55);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+}
+
+.actrya-topbar__search input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.actrya-topbar__search input::placeholder {
+  color: var(--actrya-muted-dark);
+}
+
+.actrya-topbar__icon-btn {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--actrya-border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  color: var(--actrya-muted);
+  transition: 0.2s ease;
+}
+
+.actrya-topbar__icon-btn:hover {
+  border-color: rgba(139, 92, 246, 0.45);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.actrya-topbar__avatar {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 30% 25%, #c4b5fd, transparent 28%),
+    linear-gradient(135deg, #7c3aed, #3b0764);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 950;
+  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.32);
+}
+
+@media (max-width: 900px) {
+  .actrya-topbar {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .actrya-topbar__search {
+    width: 100%;
+  }
+}

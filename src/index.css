@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --actrya-bg: #05030d;
+  --actrya-bg-soft: #0c0718;
+  --actrya-card: rgba(255, 255, 255, 0.055);
+  --actrya-card-strong: rgba(255, 255, 255, 0.09);
+  --actrya-border: rgba(255, 255, 255, 0.12);
+
+  --actrya-purple: #5b21b6;
+  --actrya-purple-light: #8b5cf6;
+  --actrya-purple-soft: rgba(139, 92, 246, 0.16);
+  --actrya-purple-glow: rgba(139, 92, 246, 0.38);
+
+  --actrya-text: #f8fafc;
+  --actrya-muted: #a1a1aa;
+  --actrya-muted-dark: #71717a;
+
+  color: var(--actrya-text);
+  background: var(--actrya-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 5%, rgba(139, 92, 246, 0.32), transparent 32%),
+    radial-gradient(circle at 85% 20%, rgba(91, 33, 182, 0.22), transparent 34%),
+    radial-gradient(circle at 50% 100%, rgba(124, 58, 237, 0.18), transparent 38%),
+    #05030d;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

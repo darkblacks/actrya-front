@@ -1,0 +1,25 @@
+.project-page {
+  display: grid;
+  gap: 24px;
+}
+
+.project-page__loading {
+  padding: 28px;
+  border: 1px solid var(--actrya-border);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.project-page__error {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(239, 68, 68, 0.24);
+  border-radius: 18px;
+  background: rgba(239, 68, 68, 0.08);
+  color: #fca5a5;
+  font-size: 14px;
+  font-weight: 800;
+}
